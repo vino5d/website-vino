@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noir Fashion</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+          <span class="diamond-icon"></span>
+        <span class="brand-noir">NOIR</span>
+  
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero-section">
+    <div class="owl-carousel hero-carousel owl-theme">
+      <div class="hero-item">
+        <div class="container hero-inner d-lg-flex align-items-center">
+          <div class="hero-caption wow animate__fadeInLeft">
+            <h1>Redifined your style Revolution</h1>
+            <p>Contemporary fashion pieces curated for the modern silhouette. Sleek lines · Strong contrast · Pure style.</p>
+            <a href="#gallery" class="btn btn-outline-light btn-lg">Explore Collection</a>
+          </div>
+          <div class="hero-media wow animate__fadeInRight">
+            <img src="./jean.jpeg" alt="Noir Fashion Hero" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-item">
+        <div class="container hero-inner d-lg-flex align-items-center">
+          <div class="hero-caption wow animate__fadeInLeft">
+            <h1>Curated Collections</h1>
+            <p>Handpicked silhouettes with timeless appeal. Every piece designed to speak minimal elegance.</p>
+            <a href="#gallery" class="btn btn-outline-light btn-lg">View Collection</a>
+          </div>
+          <div class="hero-media wow animate__fadeInRight">
+            <img src= "./kurti.jpeg"alt="Noir Fashion Hero 2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 wow animate__fadeInLeft">
+          <h2>About Noir Fashion</h2>
+          <p class="lead">Noir Fashion draws inspiration from monochrome contrasts and minimal silhouettes. Each collection is crafted to highlight texture, cut, and effortless confidence.</p>
+          <ul class="about-list">
+            <li>High-quality fabrics</li>
+            <li>Limited seasonal collections</li>
+            <li>Custom tailoring available</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 wow animate__fadeInRight text-center">
+          <img src="./hang.jpeg" class="img-fluid rounded" alt="About Noir Fashion" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery-section py-5">
+    <div class="container">
+      <h2 class="section-title wow animate__fadeInUp">Collection</h2>
+
+      <div class="filter-row text-center wow animate__fadeInUp">
+        <button class="btn-filter active" data-filter="*">All</button>
+        <button class="btn-filter" data-filter="tops">Women</button>
+        <button class="btn-filter" data-filter="dresses">Men</button>
+        <button class="btn-filter" data-filter="accessories">Accessories</button>
+      </div>
+
+      <div class="row g-4 mt-3" id="productGrid">
+        <div class="col-md-6 col-lg-4 product-card wow animate__fadeInUp" data-category="dresses">
+          <div class="card noir-card">
+            <img src="./menbrown.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Formal outfit</h5>
+              <p class="card-text">From $999</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 product-card wow animate__fadeInUp" data-category="tops">
+          <div class="card noir-card">
+            <img src="./black.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Silk Fit & Flare </h5>
+              <p class="card-text">From $1500</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 product-card wow animate__fadeInUp" data-category="accessories">
+          <div class="card noir-card">
+            <img src="./rolex.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Rolex Datejust</h5>
+              <p class="card-text">$5000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 product-card wow animate__fadeInUp" data-category="dresses">
+          <div class="card noir-card">
+            <img src="./casualmen.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Smart casual wear</h5>
+              <p class="card-text">From $1000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 product-card wow animate__fadeInUp" data-category="tops">
+          <div class="card noir-card">
+            <img src="./white.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Festive Wear</h5>
+              <p class="card-text">From $2000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 product-card wow animate__fadeInUp" data-category="accessories">
+          <div class="card noir-card">
+            <img src="./brace.jpeg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Jubilee Bracelet</h5>
+              <p class="card-text">$3000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-7 wow animate__fadeInLeft">
+          <div class="card contact-card p-4">
+            <h3>Contact</h3>
+            <p>For custom orders and inquiries, drop us a message.</p>
+            <form id="contactForm" onsubmit="return false;">
+              <div class="row g-2">
+                <div class="col-md-6">
+                  <input class="form-control" type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" type="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="mt-2">
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="mt-3 d-flex align-items-center gap-3">
+                <button class="btn btn-outline-light" type="submit">Send Message</button>
+                <p class="form-note mb-0">* This form is UI-only. Connect to backend to send messages.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-5 wow animate__fadeInRight">
+          <div class="info-block p-4">
+            <h5>Visit Us</h5>
+            <p>123 Noir Avenue, Fashion District<br>City, Country</p>
+            <h6>Opening Hours</h6>
+            <p>Mon - Sat: 10:00 - 19:00</p>
+            <h6>Find us on map</h6>
+            <div class="map-wrap mt-2">
+              <!-- Example embedded map (change place if needed) -->
+              <iframe
+                src="https://www.google.com/maps?q=Eiffel+Tower&output=embed"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <h6 class="mt-3">Follow</h6>
+            <p class="mb-0 socials"><i class="fab fa-instagram"></i> Instagram &nbsp; <i class="fab fa-pinterest"></i> Pinterest</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small>&copy; <span id="year"></span> Noir Fashion — All rights reserved.</small>
+      <small class="text-muted">Designed & coded for demo</small>
+    </div>
+  </footer>
+
+
+
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>NOIR</h2>
+      <p>Redefining fashion with bold designs, sustainable practices, and uncompromising quality. Join us in creating the future of style.</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h3>SHOP</h3>
+        <ul>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>SUPPORT</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>COMPANY</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 NOIR. All rights reserved. | Designed by <span>TemplateMo</span></p>
+    <div class="footer-payments">
+      <span>VISA</span>
+      <span>MC</span>
+      <span>AMEX</span>
+      <span>PAY</span>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.3/wow.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
